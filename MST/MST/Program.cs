@@ -23,22 +23,27 @@ namespace MST
                 if (input == 1)
                 {
                     int cem = Toplama();
+                    Console.WriteLine($"Iki ededin cemi: {cem}");
                 }
                 else if (input == 2)
                 {
                     int ferq = Cixma();
+                    Console.WriteLine($"iki eded arasindaki ferq: {ferq}");
                 }
                 else if (input == 3)
                 {
                     int hasill = Vurma();
+                    Console.WriteLine($"iki ededin hasili: {hasill}");
                 }
                 else if (input == 4)
                 {
                     float qismet = Bolme();
+                    Console.WriteLine($"iki ededin qismeti: {qismet}");
                 }
                 else if (input == 5)
                 {
                     int ustAlma = UstAlma();
+                    Console.WriteLine($"Ededin kvadrati: {ustAlma}");
                 }
                 else if (input == 6)
                 {
@@ -54,7 +59,6 @@ namespace MST
             Console.Write("2. ededi daxil edin: ");
             int number2 = int.Parse(Console.ReadLine());
             int cem = number1 + number2;
-            Console.WriteLine($"Iki ededin cemi: {cem}");
             return cem;
         }
         public static int Cixma()
@@ -64,7 +68,6 @@ namespace MST
             Console.Write("2. ededi daxil edin: ");
             int number2 = int.Parse(Console.ReadLine());
             int ferq = number2 - number1;
-            Console.WriteLine($"iki eded arasindaki ferq: {ferq}");
             return ferq;
         }
         public static int Vurma()
@@ -74,7 +77,6 @@ namespace MST
             Console.Write("2. ededi daxil edin: ");
             int number2 = int.Parse(Console.ReadLine());
             int hasil = number1 * number2;
-            Console.WriteLine($"iki ededin hasili: {hasil}");
             return hasil;
         }
         public static float Bolme()
@@ -84,7 +86,6 @@ namespace MST
             Console.Write("2. ededi daxil edin: ");
             float number2 = int.Parse(Console.ReadLine());
             float qismet = number1 / number2;
-            Console.WriteLine($"iki ededin qismeti: {qismet}");
             return qismet;
         }
         public static int UstAlma()
@@ -92,7 +93,6 @@ namespace MST
             Console.Write("Ededi daxil edin: ");
             int number1 = int.Parse(Console.ReadLine());
             int kvadrat = number1 * number1;
-            Console.WriteLine($"Ededin kvadrati: {kvadrat}");
             return kvadrat;
         }
     }
